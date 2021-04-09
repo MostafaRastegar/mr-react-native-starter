@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { View, Text } from "react-native";
 import { StyledFundListBanner } from "./styles";
-import request from "~/request";
+import request from "~/store/request";
 
 const FundsList = ({ data }) => {
   console.log("data :>> ", data);

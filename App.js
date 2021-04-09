@@ -6,7 +6,7 @@ import { ContainerView } from "./styles";
 import { PersistGate } from "redux-persist/es/integration/react";
 import Counter from "~/components/Common/screens/Counter";
 import FundList from "~/components/Pages/fund/FundList";
-import { store, persistor } from "~/redux/store/store";
+import { store, persistor } from "~/store/store";
 import { Provider } from "react-redux";
 import { ThemeProvider } from "styled-components";
 import defaultTheme from "~/constants/theme";

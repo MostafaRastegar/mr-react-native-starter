@@ -1,13 +1,12 @@
 /**
- * configuration importers
+ * users importers
  */
-// export { default as configurationReducers } from './configuration/reducers';
-export { default as configurationSelectors } from "./configuration/selectors";
+export { default as usersSelectors } from "./user/selectors";
 // eslint-disable-next-line import/no-cycle
-export { default as configurationEffects } from "./configuration/effects";
-export { default as configurationActions } from "./configuration/actions";
-export { default as configurationServices } from "./configuration/services";
-export { default as configurationTypes } from "./configuration/types";
+export { default as usersEffects } from "./user/effects";
+export { default as usersActions } from "./user/actions";
+export { default as usersServices } from "./user/services";
+export { default as usersTypes } from "./user/types";
 
 /**
  * auth importers

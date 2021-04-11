@@ -1,15 +1,19 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
+import { useDispatch, useSelector } from "react-redux";
 import { View, Text } from "react-native";
 import { StyledFundListBanner } from "./styles";
-import request from "~/store/request";
+import { usersEffects, usersSelectors } from "~/store";
 
-const FundsList = ({ data }) => {
-  console.log("data :>> ", data);
+const FundsList = () => {
+  const dispatch = useDispatch();
+  const allUsersData = useSelector((state) =>
+    usersSelectors.getAllUsersData(state)
+  );
+
+  console.log("data :>> ", allUsersData);
   useEffect(() => {
-    request
-      .get("https://jsonplaceholder.typicode.com/todos/1")
-      .then((res) => console.log("res :>> ", res));
+    dispatch(usersEffects.getAllUsersRequest());
   }, []);
   return (
     <>

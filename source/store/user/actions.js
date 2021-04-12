@@ -1,5 +1,5 @@
-import { actionMaker } from "~/helpers/reduxHelpers";
-import types from "./types";
+import { actionMaker } from '~/helpers/reduxHelpers';
+import types from './types';
 
 export default {
   getAllUsersRequest: actionMaker(types.GET_ALL_USERS_REQUEST),

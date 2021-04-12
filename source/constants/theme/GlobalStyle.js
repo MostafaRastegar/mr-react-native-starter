@@ -1,9 +1,9 @@
-import { createGlobalStyle } from "styled-components";
-import { color, px, styles } from "~/constants/theme/helpers";
+import { createGlobalStyle } from 'styled-components';
+import { color, px, styles } from '~/constants/theme/helpers';
 
 const GlobalStyle = createGlobalStyle`
   .global-shadow {
-    box-shadow: ${styles("shadow")};
+    box-shadow: ${styles('shadow')};
   }
 
   .radius-6 {
@@ -16,55 +16,55 @@ const GlobalStyle = createGlobalStyle`
     }
     &-gray{
       &-normal{
-          background-color: ${color("gray", "normal")};
+          background-color: ${color('gray', 'normal')};
       }
       &-dark{
-          background-color: ${color("gray", "dark")};
+          background-color: ${color('gray', 'dark')};
       }
       &-light{
-          background-color: ${color("gray", "light")};
+          background-color: ${color('gray', 'light')};
       }
       &-ultraLight{
-          background-color: ${color("gray", "ultraLight")};
+          background-color: ${color('gray', 'ultraLight')};
       }
     }
 
     &-b{
       &-normal{
-          background-color: ${color("blue", "normal")};
+          background-color: ${color('blue', 'normal')};
       }
       &-dark{
-          background-color: ${color("blue", "dark")};
+          background-color: ${color('blue', 'dark')};
       }
       &-light{
-          background-color: ${color("blue", "light")};
+          background-color: ${color('blue', 'light')};
       }
     }
 
     &-g{
       &-normal{
-          background-color: ${color("green", "normal")};
+          background-color: ${color('green', 'normal')};
       }
       &-dark{
-          background-color: ${color("green", "dark")};
+          background-color: ${color('green', 'dark')};
       }
       &-light{
-          background-color: ${color("green", "light")};
+          background-color: ${color('green', 'light')};
       }
     }
 
     &-r{
       &-dark{
-          background-color: ${color("red", "dark")};
+          background-color: ${color('red', 'dark')};
       }
       &-light{
-          background-color: ${color("red", "light")};
+          background-color: ${color('red', 'light')};
       }
     }
 
     &-y{
       &-dark{
-          background-color: ${color("yellow", "dark")};
+          background-color: ${color('yellow', 'dark')};
       }
     }
   }
@@ -91,55 +91,55 @@ const GlobalStyle = createGlobalStyle`
 
     &-gray{
       &-normal{
-          color: ${color("gray", "normal")};
+          color: ${color('gray', 'normal')};
       }
       &-dark{
-          color: ${color("gray", "dark")};
+          color: ${color('gray', 'dark')};
       }
       &-light{
-          color: ${color("gray", "light")};
+          color: ${color('gray', 'light')};
       }
       &-ultraLight{
-          color: ${color("gray", "ultraLight")};
+          color: ${color('gray', 'ultraLight')};
       }
     }
 
     &-b{
       &-normal{
-          color: ${color("blue", "normal")};
+          color: ${color('blue', 'normal')};
       }
       &-dark{
-          color: ${color("blue", "dark")};
+          color: ${color('blue', 'dark')};
       }
       &-light{
-          color: ${color("blue", "light")};
+          color: ${color('blue', 'light')};
       }
     }
 
     &-g{
       &-normal{
-          color: ${color("green", "normal")};
+          color: ${color('green', 'normal')};
       }
       &-dark{
-          color: ${color("green", "dark")};
+          color: ${color('green', 'dark')};
       }
       &-light{
-          color: ${color("green", "light")};
+          color: ${color('green', 'light')};
       }
     }
 
     &-r{
       &-dark{
-          color: ${color("red", "dark")};
+          color: ${color('red', 'dark')};
       }
       &-light{
-          color: ${color("red", "light")};
+          color: ${color('red', 'light')};
       }
     }
 
     &-y{
       &-dark{
-          color: ${color("yellow", "dark")};
+          color: ${color('yellow', 'dark')};
       }
     }
   }

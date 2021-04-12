@@ -5,7 +5,10 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "lint-js": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
+    "lint": "npm run lint-js",
+    "fix-js": "npm run lint-js --fix"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.12.1",
@@ -26,7 +29,6 @@
     "react-redux": "^7.2.3",
     "react-redux-loading-bar": "^5.0.0",
     "redux": "^4.0.5",
-    "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
@@ -36,11 +38,32 @@
     "@babel/core": "^7.9.0",
     "babel-jest": "~25.2.6",
     "babel-plugin-root-import": "^6.6.0",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-import-resolver-webpack": "^0.13.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "jest": "~25.2.6",
-    "react-test-renderer": "~16.13.1"
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.2.1",
+    "react-test-renderer": "~16.13.1",
+    "redux-devtools-extension": "^2.13.9"
   },
   "jest": {
     "preset": "react-native"
   },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add --force"
+    ],
+    "*.{md,graphql}": [
+      "prettier --write",
+      "git add --force"
+    ]
+  },
+  "pre-commit": "lint-staged",
   "private": true
 }

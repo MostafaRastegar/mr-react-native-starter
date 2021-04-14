@@ -1,46 +1,32 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true,
+    es2020: true,
     node: true,
+    commonjs: true,
   },
-  parser: 'babel-eslint',
-
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    'react-app',
-    'prettier',
-    'prettier/flowtype',
-    'prettier/react',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier', 'react-hooks'],
+  plugins: ['react'],
+  // rules: {
+  //   'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+  // },
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        printWidth: 80,
-        trailingComma: 'es5',
-        semi: false,
-        jsxSingleQuote: true,
-        singleQuote: true,
-        useTabs: true,
-      },
-    ],
-
+    'linebreak-style': 0,
     'import/no-absolute-path': [
       2,
       { esmodule: false, commonjs: false, amd: false },
     ],
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
+    // Forbid the use of extraneous packages
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
     'import/no-extraneous-dependencies': ['error', { packageDir: '.' }],
 
     'no-unused-expressions': 'off',
@@ -54,6 +40,7 @@ module.exports = {
         allow: ['warn', 'error', 'info'],
       },
     ],
+
     // Allow only special identifiers
     // https://eslint.org/docs/rules/no-underscore-dangle
     'no-underscore-dangle': [
@@ -99,56 +86,21 @@ module.exports = {
     'react/forbid-prop-types': 'off',
     'react/destructuring-assignment': 'off',
     'react/no-access-state-in-setstate': 'off',
-    'jsx-a11y/no-noninteractive-element-interactions': 'warning',
-    'jsx-a11y/click-events-have-key-events': 'warning',
+
     camelcase: 'off',
 
     // ESLint plugin for prettier formatting
     // https://github.com/prettier/eslint-plugin-prettier
     'prettier/prettier': ['error', { singleQuote: true, trailingComma: 'all' }],
   },
-
   settings: {
-    // Allow absolute paths in imports, e.g. import Button from 'components/Button'
-    // https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers
     'import/resolver': {
+      alias: {
+        map: [['~/*', './source/*']],
+      },
       node: {
-        paths: ['./'],
+        extensions: ['.js', '.jsx'],
       },
     },
   },
 };
-
-// module.exports = {
-//   env: {
-//     browser: true,
-//     es6: true,
-//     node: true,
-//   },
-//   parser: 'babel-eslint',
-//   extends: [
-//     'plugin:react/recommended',
-//     'airbnb',
-//     'react-app',
-//     'prettier',
-//     'prettier/flowtype',
-//     'prettier/react',
-//   ],
-//   plugins: ['react', 'prettier'],
-//   parserOptions: {
-//     ecmaVersion: 2018,
-//   },
-//   rules: {
-//     'prettier/prettier': [
-//       'error',
-//       {
-//         printWidth: 80,
-//         trailingComma: 'es5',
-//         semi: false,
-//         jsxSingleQuote: true,
-//         singleQuote: true,
-//         useTabs: true,
-//       },
-//     ],
-//   },
-// };

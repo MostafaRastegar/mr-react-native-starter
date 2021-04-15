@@ -1,5 +1,4 @@
 export const actionMaker = (type) => (payload = {}) => ({ type, payload });
-
 export const makeActionsObject = (actionName) => ({
   request: `${actionName}_REQUEST`,
   success: `${actionName}_SUCCESS`,

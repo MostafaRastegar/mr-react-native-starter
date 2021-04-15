@@ -1,5 +1,5 @@
-import { showLoading, hideLoading } from "react-redux-loading-bar";
-import authActions from "./actions";
+import { showLoading, hideLoading } from 'react-redux-loading-bar';
+import authActions from './actions';
 
 export default {
   login: (trueFalse) => {

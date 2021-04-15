@@ -1,4 +1,4 @@
-import { createSelector } from "reselect";
+import { createSelector } from 'reselect';
 /**
  * Main selectors, we did memoize this functions
  */

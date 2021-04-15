@@ -67,13 +67,11 @@ export default [
     ],
     refundGuarantee: false,
     queueable: true,
-    iconUrl:
-      'https://kian.trade/addons/shared_addons/themes/multiskin/img/frontend/kian/kian.png',
+    iconUrl: 'https://kian.trade/addons/shared_addons/themes/multiskin/img/frontend/kian/kian.png',
     isin: null,
     productCode: 'KIAN_NON_ETF_FUND',
     commissionDtos: [],
-    message:
-      'در خواست شما در انتظار ثبت قرار خواهد گرفت و در اولین روز کاری ثبت خواهد شد.',
+    message: 'در خواست شما در انتظار ثبت قرار خواهد گرفت و در اولین روز کاری ثبت خواهد شد.',
     buyDisabledMessage:
       'در حال حاضر به دلیل پر بودن ظرفیت صندوق، امکان ثبت درخواست صدور وجود ندارد.',
     sellDisabledMessage: 'در حال حاضر امکان ثبت درخواست ابطال وجود ندارد.',
@@ -145,8 +143,7 @@ export default [
     blogLinks: [],
     refundGuarantee: false,
     queueable: true,
-    iconUrl:
-      'https://kian.trade/addons/shared_addons/themes/multiskin/img/frontend/kian/kian.png',
+    iconUrl: 'https://kian.trade/addons/shared_addons/themes/multiskin/img/frontend/kian/kian.png',
     isin: 'IRT1FKNF0001',
     productCode: 'KIAN_ETF_FIXED_INCOME_OPENING',
     commissionDtos: [
@@ -159,8 +156,7 @@ export default [
         buyMax: -1,
       },
     ],
-    message:
-      'در خواست شما در انتظار ثبت قرار گرفته و در اولین روز و ساعت کاری ثبت خواهد شد.',
+    message: 'در خواست شما در انتظار ثبت قرار گرفته و در اولین روز و ساعت کاری ثبت خواهد شد.',
     buyDisabledMessage:
       'در حال حاضر به دلیل پر بودن ظرفیت صندوق، امکان ثبت درخواست صدور وجود ندارد.',
     sellDisabledMessage: 'در حال حاضر امکان ثبت درخواست ابطال وجود ندارد.',
@@ -216,8 +212,7 @@ export default [
       },
       {
         title: 'ترکیب دارایی‌ها',
-        url:
-          'http://www.sarmayehdonyafund.com/Reports/FundAssetDistributionForDifferentPeriods',
+        url: 'http://www.sarmayehdonyafund.com/Reports/FundAssetDistributionForDifferentPeriods',
       },
     ],
     rois: {
@@ -229,13 +224,11 @@ export default [
     blogLinks: [],
     refundGuarantee: false,
     queueable: true,
-    iconUrl:
-      'https://kian.trade/addons/shared_addons/themes/multiskin/img/frontend/kian/kian.png',
+    iconUrl: 'https://kian.trade/addons/shared_addons/themes/multiskin/img/frontend/kian/kian.png',
     isin: null,
     productCode: 'KIAN_NON_ETF_DONYA_FUND',
     commissionDtos: [],
-    message:
-      'در خواست شما در انتظار ثبت قرار خواهد گرفت و در اولین روز کاری ثبت خواهد شد.',
+    message: 'در خواست شما در انتظار ثبت قرار خواهد گرفت و در اولین روز کاری ثبت خواهد شد.',
     buyDisabledMessage:
       'در حال حاضر به دلیل پر بودن ظرفیت صندوق، امکان ثبت درخواست صدور وجود ندارد.',
     sellDisabledMessage: 'در حال حاضر امکان ثبت درخواست ابطال وجود ندارد.',
@@ -307,8 +300,7 @@ export default [
     blogLinks: [],
     refundGuarantee: false,
     queueable: true,
-    iconUrl:
-      'https://kian.trade/addons/shared_addons/themes/multiskin/img/frontend/kian/kian.png',
+    iconUrl: 'https://kian.trade/addons/shared_addons/themes/multiskin/img/frontend/kian/kian.png',
     isin: 'IRTKKIAN0001',
     productCode: 'KIAN_ETF_FIXED_INCOME_OPENING',
     commissionDtos: [
@@ -321,8 +313,7 @@ export default [
         buyMax: -1,
       },
     ],
-    message:
-      'در خواست شما در انتظار ثبت قرار گرفته و در اولین روز و ساعت کاری ثبت خواهد شد.',
+    message: 'در خواست شما در انتظار ثبت قرار گرفته و در اولین روز و ساعت کاری ثبت خواهد شد.',
     buyDisabledMessage:
       'در حال حاضر به دلیل پر بودن ظرفیت صندوق، امکان ثبت درخواست صدور وجود ندارد.',
     sellDisabledMessage: 'در حال حاضر امکان ثبت درخواست ابطال وجود ندارد.',

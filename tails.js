@@ -1,37 +1,38 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
+
 export default StyleSheet.create({
   dirLtr: {
-    direction: "ltr",
+    direction: 'ltr',
   },
   justifyStart: {
-    justifyContent: "flex-start",
+    justifyContent: 'flex-start',
   },
   justifyEnd: {
-    justifyContent: "flex-end",
+    justifyContent: 'flex-end',
   },
   justifyCenter: {
-    justifyContent: "center",
+    justifyContent: 'center',
   },
   justifyBetween: {
-    justifyContent: "space-between",
+    justifyContent: 'space-between',
   },
   justifyAround: {
-    justifyContent: "space-around",
+    justifyContent: 'space-around',
   },
   justifyEvenly: {
-    justifyContent: "space-evenly",
+    justifyContent: 'space-evenly',
   },
   alignItemsCenter: {
-    alignItems: "center",
+    alignItems: 'center',
   },
   alignItemsStart: {
-    alignItems: "flex-start",
+    alignItems: 'flex-start',
   },
   alignItemsEnd: {
-    alignItems: "flex-end",
+    alignItems: 'flex-end',
   },
   alignItemsStretch: {
-    alignItems: "stretch",
+    alignItems: 'stretch',
   },
   opacity0: {
     opacity: 0,
@@ -88,46 +89,46 @@ export default StyleSheet.create({
     flex: 0,
   },
   flexRow: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   flexRowReverse: {
-    flexDirection: "row-reverse",
+    flexDirection: 'row-reverse',
   },
   flexCol: {
-    flexDirection: "column",
+    flexDirection: 'column',
   },
   flexColReverse: {
-    flexDirection: "column-reverse",
+    flexDirection: 'column-reverse',
   },
   flexWrap: {
-    flexWrap: "wrap",
+    flexWrap: 'wrap',
   },
   flexWrapReverse: {
-    flexWrap: "wrap-reverse",
+    flexWrap: 'wrap-reverse',
   },
   flexNowrap: {
-    flexWrap: "nowrap",
+    flexWrap: 'nowrap',
   },
   flex: {
-    display: "flex",
+    display: 'flex',
   },
   hidden: {
-    display: "none",
+    display: 'none',
   },
   overflowHidden: {
-    overflow: "hidden",
+    overflow: 'hidden',
   },
   overflowVisible: {
-    overflow: "visible",
+    overflow: 'visible',
   },
   overflowScroll: {
-    overflow: "scroll",
+    overflow: 'scroll',
   },
   absolute: {
-    position: "absolute",
+    position: 'absolute',
   },
   relative: {
-    position: "relative",
+    position: 'relative',
   },
   z0: {
     zIndex: 0,
@@ -148,36 +149,36 @@ export default StyleSheet.create({
     zIndex: 50,
   },
   mrAuto: {
-    marginRight: "auto",
+    marginRight: 'auto',
   },
   mlAuto: {
-    marginLeft: "auto",
+    marginLeft: 'auto',
   },
   mtAuto: {
-    marginTop: "auto",
+    marginTop: 'auto',
   },
   mbAuto: {
-    marginBottom: "auto",
+    marginBottom: 'auto',
   },
   textLeft: {
-    textAlign: "left",
+    textAlign: 'left',
   },
   textCenter: {
-    textAlign: "center",
+    textAlign: 'center',
   },
   textRight: {
-    textAlign: "right",
+    textAlign: 'right',
   },
   textJustify: {
-    textAlign: "justify",
+    textAlign: 'justify',
   },
   fontLight: {
-    fontWeight: "300",
+    fontWeight: '300',
   },
   fontNormal: {
-    fontWeight: "normal",
+    fontWeight: 'normal',
   },
   fontBold: {
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
 });

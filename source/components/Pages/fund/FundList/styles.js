@@ -1,8 +1,7 @@
-import styled from "styled-components";
-import { View, Text } from "react-native";
+import styled from 'styled-components';
+import { View, Text } from 'react-native';
 
-import { color, px } from "~/constants/theme/helpers";
-
+import { color, px } from '~/constants/theme/helpers';
 export const StyledFundListBanner = styled(View)`
   position: relative;
 `;
@@ -11,7 +10,7 @@ export const StyledFundListWrapper = styled(View)`
   padding: ${px(16, 16, 0)};
   margin-top: ${px(-80)};
   position: relative;
-  background-color: ${color("green", "normal")};
+  background-color: ${color('green', 'normal')};
 `;
 
 export const StyledFundListItemWrapper = styled(View)``;

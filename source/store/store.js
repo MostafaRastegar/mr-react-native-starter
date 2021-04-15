@@ -6,7 +6,7 @@ import { persistStore, persistReducer } from 'redux-persist';
 import { loadingBarMiddleware } from 'react-redux-loading-bar';
 import thunk from 'redux-thunk';
 // Imports: Redux
-import rootReducer from '../store/rootReducer';
+import rootReducer from './rootReducer';
 
 const composeEnhancers = composeWithDevTools({
   // Specify here name, actionsBlacklist, actionsCreators and other options
@@ -31,10 +31,7 @@ const loadingMD = loadingBarMiddleware({
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 // Redux: Store
-const store = createStore(
-  persistedReducer,
-  composeEnhancers(applyMiddleware(thunk, loadingMD)),
-);
+const store = createStore(persistedReducer, composeEnhancers(applyMiddleware(thunk, loadingMD)));
 
 // Middleware: Redux Persist Persister
 const persistor = persistStore(store);

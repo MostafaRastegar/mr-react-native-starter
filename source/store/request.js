@@ -65,6 +65,7 @@ instanceAxios.interceptors.response.use(
             instanceAxios.defaults.headers.common.Authorization = `Bearer ${localStorageService.getAccessToken()}`;
             return axios(originalRequest);
           }
+          return res;
         });
     }
     return Promise.reject(error);

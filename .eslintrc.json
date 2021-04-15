@@ -18,7 +18,10 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    "import/no-absolute-path": [2, { "esmodule": false, "commonjs": false, "amd": false }],
+    "import/no-absolute-path": [
+      2,
+      { "esmodule": false, "commonjs": false, "amd": false }
+    ],
     "import/no-extraneous-dependencies": ["error", { "packageDir": "." }],
     "no-unused-expressions": "off",
     "no-use-before-define": [
@@ -31,13 +34,6 @@
     ],
 
     "no-nested-ternary": "error",
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ],
-
     "no-console": [
       "error",
       {
@@ -76,7 +72,7 @@
     "react/forbid-prop-types": "off",
     "react/destructuring-assignment": "off",
     "react/no-access-state-in-setstate": "off",
-    "react/style-prop-object": ["error", { "allow": ["App"] }],
+    "react/style-prop-object": ["off"],
 
     "jsx-a11y/no-noninteractive-element-interactions": 1,
     "jsx-a11y/click-events-have-key-events": 1,

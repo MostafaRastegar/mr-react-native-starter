@@ -6,5 +6,8 @@ const getUsers = (state) => state.users;
 
 export default {
   getAllUsersData: createSelector(getUsers, (users) => users.allUsers.data),
-  getAllUsersLoading: createSelector(getUsers, (users) => users.allUsers.loading),
+  getAllUsersLoading: createSelector(
+    getUsers,
+    (users) => users.allUsers.loading,
+  ),
 };

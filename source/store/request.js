@@ -32,7 +32,7 @@ instanceAxios.interceptors.request.use(
   },
   (error) => {
     Promise.reject(error);
-  }
+  },
 );
 
 // Add a response interceptor
@@ -69,7 +69,7 @@ instanceAxios.interceptors.response.use(
         });
     }
     return Promise.reject(error);
-  }
+  },
 );
 
 export default instanceAxios;

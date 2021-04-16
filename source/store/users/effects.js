@@ -1,5 +1,6 @@
 import { showLoading, hideLoading } from 'react-redux-loading-bar';
-import { usersServices, usersActions } from '..';
+import usersActions from './actions';
+import usersServices from './services';
 import { errObject } from '~/helpers/reduxHelpers';
 
 export default {

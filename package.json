@@ -1,9 +1,10 @@
 {
   "main": "index.js",
+  "version": "0.4.0",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "web": "expo start --web",
+    "web": "npx cross-env BUILD_ENV=development expo start --web",
     "start": "react-native start",
     "test": "jest",
     "lint-js": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
@@ -13,6 +14,7 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.12.1",
     "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/bottom-tabs": "^5.11.9",
     "@react-navigation/native": "^5.9.4",
     "@react-navigation/stack": "^5.14.4",
     "axios": "^0.21.1",
@@ -21,6 +23,7 @@
     "expo-status-bar": "~1.0.3",
     "expo-updates": "~0.4.0",
     "mr-min-tail-css": "^0.5.1",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "~0.63.4",
@@ -36,7 +39,8 @@
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "expo-constants": "~9.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",

@@ -19,7 +19,7 @@ const users = (state = initialState, action) => {
     case types.GET_ALL_USERS_SUCCESS:
       return {
         ...state,
-        allUsers: { loading: true, data: action.payload, error: false },
+        allUsers: { loading: false, data: action.payload, error: false },
       };
     case types.GET_ALL_USERS_FAILURE:
       return {

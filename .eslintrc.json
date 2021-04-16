@@ -1,0 +1,91 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parser": "@babel/eslint-parser",
+  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "import/no-absolute-path": [
+      2,
+      { "esmodule": false, "commonjs": false, "amd": false }
+    ],
+    "import/no-extraneous-dependencies": ["error", { "packageDir": "." }],
+    "no-unused-expressions": "off",
+    "no-use-before-define": [
+      "error",
+      {
+        "variables": false,
+        "functions": false,
+        "classes": true
+      }
+    ],
+
+    "no-nested-ternary": "error",
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error", "info"]
+      }
+    ],
+
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": ["__typename"]
+      }
+    ],
+
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": "off",
+
+    "react/prefer-stateless-function": "off",
+    "import/prefer-default-export": "off",
+
+    "react/forbid-prop-types": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-access-state-in-setstate": "off",
+    "react/style-prop-object": ["off"],
+
+    "jsx-a11y/no-noninteractive-element-interactions": 1,
+    "jsx-a11y/click-events-have-key-events": 1,
+    "camelcase": "off",
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
+    "react/state-in-constructor": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [["~", "./source"]],
+        "extensions": [".ts", ".js", ".jsx", ".json"]
+      }
+    }
+  }
+}

@@ -1,7 +1,13 @@
-const hostUrl = process.env.HOSTURL;
+import Constants from 'expo-constants';
+
+const { HOSTURL } = Constants.manifest.extra;
+
 export default {
   CONFIGURATION: {
     GET_CONFIGURATION_SERVICE: () =>
-      `${hostUrl}/configuration/api/v1/configurations`,
+      `${HOSTURL}/configuration/api/v1/configurations`,
+  },
+  USERS: {
+    GET_ALL_USERS_SERVICE: () => `${HOSTURL}/users`,
   },
 };

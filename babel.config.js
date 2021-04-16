@@ -1,23 +1,23 @@
-module.exports = function (api) {
+module.exports = (api) => {
   api.cache(true);
   return {
-    presets: ["babel-preset-expo", "module:metro-react-native-babel-preset"],
+    presets: ['babel-preset-expo', 'module:metro-react-native-babel-preset'],
     plugins: [
       [
-        "babel-plugin-root-import",
+        'babel-plugin-root-import',
         {
-          rootPathPrefix: "~",
-          rootPathSuffix: "source",
+          rootPathPrefix: '~',
+          rootPathSuffix: 'source',
         },
       ],
     ],
     env: {
       production: {
         plugins: [
-          "babel-plugin-root-import",
+          'babel-plugin-root-import',
           {
-            rootPathPrefix: "~",
-            rootPathSuffix: "source",
+            rootPathPrefix: '~',
+            rootPathSuffix: 'source',
           },
         ],
       },

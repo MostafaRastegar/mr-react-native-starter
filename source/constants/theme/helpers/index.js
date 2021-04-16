@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * @function
  * @name px
@@ -5,7 +6,7 @@
  * @param pt
  * @returns {function(*): string}
  */
-export const ptToPx = pt => `${Math.round(pt * 0.95)}px`;
+export const ptToPx = (pt) => `${Math.round(pt * 0.95)}px`;
 
 /**
  * @function
@@ -15,10 +16,8 @@ export const ptToPx = pt => `${Math.round(pt * 0.95)}px`;
  */
 export const px = function remSizes() {
   return () =>
-    // eslint-disable-next-line prefer-rest-params
     [...arguments]
-      .map(size =>
-        // eslint-disable-next-line no-nested-ternary
+      .map((size) =>
         size ? (typeof size !== 'number' ? size : ptToPx(size)) : '0',
       )
       .join(' ');
@@ -31,55 +30,9 @@ export const px = function remSizes() {
  * @param hex
  * @returns {{red: number, green: number, blue: number, opacity: 1}}
  */
-export const jsRgba = (red, green, blue, opacity = 1) => {
-  return `rgba(${red}, ${green}, ${blue}, ${opacity})`;
-};
+export const jsRgba = (red, green, blue, opacity = 1) =>
+  `rgba(${red}, ${green}, ${blue}, ${opacity})`;
 
-/**
- * @function
- * @name hexToRgb
- * @description Convert hex color to rgb color
- * @param hex
- * @returns {{red: number, green: number, blue: number}}
- */
-export const hexToRgb = hex => {
-  if (!hex) {
-    return { red: 0, green: 0, blue: 0 };
-  }
-
-  const hexColor = hex.replace('#', '');
-  return {
-    red: parseInt(hexColor.substr(0, 2), 16),
-    green: parseInt(hexColor.substr(2, 2), 16),
-    blue: parseInt(hexColor.substr(4, 2), 16),
-  };
-};
-
-/**
- * @function
- * @name defineForegroundColor
- * @description Decide between dark or light color based on background color brightness
- * @param backgroundColor   {string}    background color in hex
- * @returns {string}
- */
-export const defineForegroundColor = backgroundColor => {
-  const rgb = hexToRgb(backgroundColor);
-  const average = (rgb.red * 299 + rgb.green * 587 + rgb.blue * 114) / 1000;
-  return average > 128 ? 'taupe' : 'white';
-};
-
-/**
- * @function
- * @name makeRgba
- * @description Make an rgba color suitable for CSS from a hex color
- * @param opacity
- * @param color
- * @returns {string}
- */
-export const makeRgba = (opacity, color) => {
-  const rgb = hexToRgb(color);
-  return `rgba(${rgb.red}, ${rgb.green}, ${rgb.blue}, ${opacity})`;
-};
 /**
  * @function
  * @name color
@@ -88,11 +41,8 @@ export const makeRgba = (opacity, color) => {
  * @param shade
  * @returns {function(*): string}
  */
-export const color = (name, shade = false) => props => {
-  return shade
-    ? `${props.theme.colors[name][shade]}`
-    : `${props.theme.colors[name]}`;
-};
+export const color = (name, shade = false) => (props) =>
+  shade ? `${props.theme.colors[name][shade]}` : `${props.theme.colors[name]}`;
 /**
  * @function
  * @name color
@@ -102,9 +52,7 @@ export const color = (name, shade = false) => props => {
  * @returns {function(*): string}
  */
 
-export const styles = name => props => {
-  return `${props.theme.styles[name]}`;
-};
+export const styles = (name) => (props) => `${props.theme.styles[name]}`;
 /**
  * @function
  * @name makeShadow
@@ -124,11 +72,10 @@ export const makeShadow = (
   spread,
   colory,
   inset = false,
-) => {
-  return `${px(hOffset)} ${px(vOffset)} ${px(blur)} ${px(spread)} ${colory} ${
+) =>
+  `${px(hOffset)} ${px(vOffset)} ${px(blur)} ${px(spread)} ${colory} ${
     inset ? ' inset' : ''
   }`;
-};
 
 /**
  * @function
@@ -138,5 +85,5 @@ export const makeShadow = (
  * @param threshold
  * @returns {function(*): string}
  */
-export const viewport = (size, threshold = 0) => props =>
+export const viewport = (size, threshold = 0) => (props) =>
   `${props.theme.viewports[size] - threshold}px`;

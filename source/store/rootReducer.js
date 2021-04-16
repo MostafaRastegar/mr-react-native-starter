@@ -1,17 +1,14 @@
 // Imports: Dependencies
-import { combineReducers } from "redux";
-import { loadingBarReducer } from "react-redux-loading-bar";
+import { combineReducers } from 'redux';
+import { loadingBarReducer } from 'react-redux-loading-bar';
 
 // Imports: Reducers
-import auth from "./auth/reducers";
-// import counterReducer from "./counterReducer";
+import users from './users/reducers';
 
 // Redux: Root Reducer
 const rootReducer = combineReducers({
-  auth,
+  users,
   loadingBar: loadingBarReducer,
-
-  // counterReducer: counterReducer,
 });
 
 // Exports

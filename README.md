@@ -40,10 +40,11 @@ _Install eslint, prettier and editor config plugins into your IDE_
 
 ## document:
 
-###Store structures:
+### Store structures:
+
 You create a folder for each main part of the reducer, for example, the users' folder used in the Redux store.
 
-####Users structures:
+#### Users structures:
 
 - **store**
   - **users**
@@ -53,7 +54,8 @@ You create a folder for each main part of the reducer, for example, the users' f
     - **services**
     - **types**
 
-####Introducing types:
+#### Introducing types:
+
 Includes an object of all types used in Users actions. Here are three types of typing for each request:
 
 **REQUEST, SUCCESS, FAILURE**
@@ -124,9 +126,9 @@ effects is an object in which the side-effects of a request are executed by the 
 
 ## USAGE:
 
-####How to dispatch action request and get data from the store in a component:
-Here we are on the track **~/components/Screens/Users/index.js
-**
+#### How to dispatch action request and get data from the store in a component:
+
+Here we are on the track **~/components/Screens/Users/index.js**
 We created a component to display users that displays their list after requesting.
 First, we import **usersEffects** and **usersSelectors** objects from the store on the component.
 

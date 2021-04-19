@@ -17,7 +17,7 @@ export default {
       return data;
     }
 
-    dispatch(usersActions.getAllUsersFailure(errObject(data)));
+    dispatch(usersActions.getAllUsersFailure(errObject(response)));
     dispatch(hideLoading());
     return false;
   },

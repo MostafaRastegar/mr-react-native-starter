@@ -1,8 +1,8 @@
 <p align="center"><img src="https://github.com/MostafaRastegar/mr-react-native-starter/raw/main/mr-react-native-starter.jpg" alt="BoxBouncing"/></p>
-<h1 align="center" style="color:#008ee5; ">mr-react-native-starter</h1>
-<h3 align="center" style="color:#666">Start your project the easiest way</h3>
-<p align="center" style=" font-weight: 900">
-    Highly flexible , High scalability ,Compatible with vscode, Redux , Axios , Redux-thunk , Redux-persist, Styled-components , ESlint and Prettier
+<h1 align="center" style="color:#008ee5;">mr-react-native-starter</h1>
+<h3 align="center" style="color:#666666;">Start your project the easiest way</h3>
+<p align="center" style="font-weight: 900">
+    Highly flexible , High scalability ,Redux , Axios , Redux-thunk , Redux-persist, Styled-components , ESlint and Prettier
 </div>
 
 This project is based on the [Expo](https://reactnative.dev/docs/getting-started 'Expo'). Therefore, you can refer to its documentation to install **react-native** and **Expo**.
@@ -11,15 +11,15 @@ In this structure, we tried to bring you a good experience by combining differen
 
 ## The main structure is as follows:
 
-- **components**
-  - **Common** _general components_
-  - **Screens** _partials and styles for every main screen_
-- **screens** _main screen pages_
-- **helpers** _utils and javascript helpers_
-- **constants**
-  - **theme** _config global colors and styles_
-  - **endpoints** _object of endpoints servieces_
-- **store** _redux repository for every main screen_
+- **`components`**
+  - **`Common`** _general components_
+  - **`Screens`** _partials and styles for every main screen_
+- **`screens`** _main screen pages_
+- **`helpers`** _utils and javascript helpers_
+- **`constants`**
+  - **`theme`** _config global colors and styles_
+  - **`endpoints`** _object of endpoints servieces_
+- **`store`** _redux repository for every main screen_
 
 ## installation:
 

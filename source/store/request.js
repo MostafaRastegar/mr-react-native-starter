@@ -40,10 +40,9 @@ instanceAxios.interceptors.request.use(
 instanceAxios.interceptors.response.use(
   (response) => response,
   (error) => {
-    const originalRequest = error.config;
-
+    const originalRequest = error?.config;
     if (
-      error.response.status === 401 &&
+      error?.response?.status === 401 &&
       originalRequest.url === 'http://13.232.130.60:8081/v1/auth/token'
     ) {
       //  router.push('/login');
@@ -51,7 +50,7 @@ instanceAxios.interceptors.response.use(
     }
 
     // eslint-disable-next-line no-underscore-dangle
-    if (error.response.status === 401 && !originalRequest._retry) {
+    if (error?.response?.status === 401 && !originalRequest._retry) {
       // eslint-disable-next-line no-underscore-dangle
       originalRequest._retry = true;
       const refreshToken = localStorageService.getRefreshToken();

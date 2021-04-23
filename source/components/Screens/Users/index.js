@@ -27,7 +27,7 @@ const Users = () => {
         ) : (
           <View>
             {allUsersData?.map((item) => (
-              <Text key={item.id}>{item?.name}</Text>
+              <Text key={item.id}>{item?.userName}</Text>
             ))}
           </View>
         )}

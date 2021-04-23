@@ -2,11 +2,11 @@ const envConfig = (MY_ENVIRONMENT) => {
   if (MY_ENVIRONMENT === 'production') {
     return {
       /* your production config */
-      HOSTURL: 'https://jsonplaceholder2.typicode.com',
+      HOSTURL: 'https://fakerestapi.azurewebsites.net',
     };
   }
   return {
-    HOSTURL: 'https://jsonplaceholder.typicode.com',
+    HOSTURL: 'https://fakerestapi.azurewebsites.net',
   };
 };
 

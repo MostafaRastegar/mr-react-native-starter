@@ -11,15 +11,15 @@ In this structure, we tried to bring you a good experience by combining differen
 
 ## The main structure is as follows:
 
-- **components**
-  - **Common** _general components_
-  - **Screens** _partials and styles for every main screen_
-- **screens** _main screen pages_
-- **helpers** _utils and javascript helpers_
-- **constants**
-  - **theme** _config global colors and styles_
-  - **endpoints** _object of endpoints servieces_
-- **store** _redux repository for every main screen_
+- **`components`**
+  - **`Common`** _general components_
+  - **`Screens`** _partials and styles for every main screen_
+- **`screens`** _main screen pages_
+- **`helpers`** _utils and javascript helpers_
+- **`constants`**
+  - **`theme`** _config global colors and styles_
+  - **`endpoints`** _object of endpoints servieces_
+- **`store`** _redux repository for every main screen_
 
 ## installation:
 

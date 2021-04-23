@@ -8,6 +8,6 @@ export default {
       `${HOSTURL}/configuration/api/v1/configurations`,
   },
   USERS: {
-    GET_ALL_USERS_SERVICE: () => `${HOSTURL}/users`,
+    GET_ALL_USERS_SERVICE: () => `${HOSTURL}/api/v1/Users`,
   },
 };

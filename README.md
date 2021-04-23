@@ -2,7 +2,7 @@
 <h1 align="center" style="color:#008ee5;">mr-react-native-starter</h1>
 <h3 align="center" style="color:#666666;">Start your project the easiest way</h3>
 <p align="center" style="font-weight: 900">
-    Highly flexible , High scalability ,Compatible with vscode, Redux , Axios , Redux-thunk , Redux-persist, Styled-components , ESlint and Prettier
+    Highly flexible , High scalability ,Redux , Axios , Redux-thunk , Redux-persist, Styled-components , ESlint and Prettier
 </div>
 
 This project is based on the [Expo](https://reactnative.dev/docs/getting-started 'Expo'). Therefore, you can refer to its documentation to install **react-native** and **Expo**.

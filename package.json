@@ -1,6 +1,6 @@
 {
   "main": "index.js",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -9,7 +9,7 @@
     "test": "jest",
     "lint-js": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "lint": "npm run lint-js",
-    "fix-js": "npm run lint-js --fix"
+    "lint:fix": "npm run lint-js --fix"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.12.1",
@@ -61,26 +61,12 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^6.0.0",
     "jest": "~25.2.6",
-    "lint-staged": "^10.5.4",
-    "pre-commit": "^1.2.2",
     "prettier": "^2.2.1",
     "react-test-renderer": "~16.13.1",
     "redux-devtools-extension": "^2.13.9"
   },
   "jest": {
     "preset": "react-native"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
-    ]
   },
   "private": true
 }

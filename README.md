@@ -1,7 +1,7 @@
 <p align="center"><img src="https://github.com/MostafaRastegar/mr-react-native-starter/raw/main/mr-react-native-starter.jpg" alt="BoxBouncing"/></p>
-<h1 align="center" style="color:#008ee5; ">mr-react-native-starter</h1>
-<h3 align="center" style="color:#666">Start your project the easiest way</h3>
-<p align="center" style=" font-weight: 900">
+<h1 align="center" style="color:#008ee5;">mr-react-native-starter</h1>
+<h3 align="center" style="color:#666666;">Start your project the easiest way</h3>
+<p align="center" style="font-weight: 900">
     Highly flexible , High scalability ,Compatible with vscode, Redux , Axios , Redux-thunk , Redux-persist, Styled-components , ESlint and Prettier
 </div>
 
